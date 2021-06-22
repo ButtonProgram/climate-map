@@ -825,7 +825,11 @@ function ArvometsaUI() {
   const showReport = reportPanelOpen && hasFeature;
 
   const tableTitle = (
-    <NavLink to="/" className="neutral-link" style={{ display: "flex" }}>
+    <NavLink
+      to="/"
+      className="neutral-link"
+      style={{ display: "flex", fontSize: "20px", lineHeight: "21px" }}
+    >
       <ExpandMoreIcon style={{ transform: "rotate(90deg)" }} />
       {LAYER_TITLE}
     </NavLink>
@@ -837,7 +841,7 @@ function ArvometsaUI() {
         showReport ? "grid-parent" : "grid-parent grid-parent-report-closed"
       }
     >
-      <Paper className="grid-col1" elevation={5}>
+      <Paper className="grid-col1" elevation={5} style={{ paddingTop: "20px" }}>
         <Container>
           <HeaderTable
             title={tableTitle}
